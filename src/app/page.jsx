@@ -16,7 +16,7 @@ async function HomePage() {
   const tasks = await loadTasks()
 
   return (
-    <section className="container mx-auto">
+    <section className="container mx-auto my-10">
       <div className="grid grid-cols-3 gap-3">
         {tasks.map(task => (
           <TaskCard task={task} key={task.id} />

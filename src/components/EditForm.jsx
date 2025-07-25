@@ -37,6 +37,7 @@ export const EditForm = ({ id }) => {
                 }
             })
             const data = await res.json();
+
             console.log(data)
         } else {
             const res = await fetch("/api/tasks", {
@@ -49,7 +50,7 @@ export const EditForm = ({ id }) => {
 
             const data = await res.json()
         }
-
+        router.refresh()
         router.push("/")
     }
 

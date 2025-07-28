@@ -55,17 +55,18 @@ export const EditForm = ({ id }) => {
     }
 
     return (
+
         <form className="bg-slate-800 p-10 lg:w-1/4 md:w-1/2"
             onSubmit={onSubmit}>
-
-            <label htmlFor="title" className="font-bold text-sm">Título De La Tarea</label>
+            <h1 className="text-xl font-bold mb-4  text-center">Edición De La Tarea</h1>
+            <label htmlFor="title" className="font-bold text-sm">Edita La Tarea</label>
             <input type="text" id="title" className="border border-gray-400 p-2 mb-4 w-full text-white"
                 placeholder="Título"
                 onChange={(e) => setTitle(e.target.value)}
                 value={title}
             />
 
-            <label htmlFor="description" className="font-bold text-sm">Descripcion De La Tarea</label>
+            <label htmlFor="description" className="font-bold text-sm">Editar La Descripcion</label>
             <textarea rows="3" id="description" className="border border-gray-400 p-2 mb-4 w-full  text-white"
                 placeholder="Describe tu tarea"
                 onChange={(e) => setDescription(e.target.value)}
@@ -75,7 +76,7 @@ export const EditForm = ({ id }) => {
             <div className='flex justify-between'>
                 <button type='submit'
                     className="bg-blue-500 hover:bg-blue-700 text-white  font-bold py-2 px-4 ounded">
-                    Crear
+                    Guardar Edición
                 </button>
 
                 {

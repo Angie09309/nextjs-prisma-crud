@@ -25,8 +25,13 @@ export default function NewForm() {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="space-y-4 max-w-md mx-auto mt-10">
-            <h1 className="text-xl font-bold mb-4">Crear nueva nota</h1>
+        <form onSubmit={handleSubmit}
+            className=" bg-slate-900 p-10  space-y-4 max-w-md mx-auto mt-10"
+        >
+
+            <h1 className="text-xl font-bold mb-4">Crear Una Nueva Tarea</h1>
+
+            <label htmlFor="title" className="font-bold text-sm">Título De La Tarea</label>
             <input
                 type="text"
                 placeholder="Título"
@@ -35,6 +40,8 @@ export default function NewForm() {
                 required
                 className="border p-2 w-full rounded"
             />
+
+            <label htmlFor="description" className="font-bold text-sm">Descripcion De La Tarea</label>
             <textarea
                 placeholder="Contenido"
                 value={description}
@@ -47,7 +54,7 @@ export default function NewForm() {
                 type="submit"
                 className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
             >
-                Guardar
+                Crear
             </button>
         </form>
     );

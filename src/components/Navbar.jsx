@@ -3,7 +3,7 @@ import Link from "next/link"
 function Navbar() {
     return (
         <nav className="bg-slate-900">
-            <div className="container mx-auto flex justify-between items-center py-3">
+            <div className="container mx-auto flex justify-between items-center py-3 px-6">
                 <Link href={"/"}>
                     <h3 className="font-bold text-3xl">
                         NEXTCRUD

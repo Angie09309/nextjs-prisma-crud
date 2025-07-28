@@ -73,15 +73,15 @@ export const EditForm = ({ id }) => {
                 value={description}
             ></textarea>
 
-            <div className='flex justify-between'>
+            <div className='flex justify-between gap-2'>
                 <button type='submit'
-                    className="bg-blue-500 hover:bg-blue-700 text-white  font-bold py-2 px-4 ounded">
+                    className="bg-blue-500 hover:bg-blue-700 text-white  font-bold py-1 px-2 rounded-lg shadow-md transition-transform hover:scale-105">
                     Guardar Edición
                 </button>
 
                 {
                     id && (
-                        <button className='bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded '
+                        <button className='bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded-lg shadow-md transition-transform hover:scale-105'
                             type='button'
                             onClick={async () => {
                                 const res = await fetch(`/api/tasks/${id}`, {
